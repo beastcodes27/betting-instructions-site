@@ -15,5 +15,5 @@ A modern, responsive betting tips website built with React and Tailwind CSS.
 
 
 ## License
-
+DEVCONNECT 2025
 Private project - All rights reserved
