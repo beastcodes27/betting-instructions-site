@@ -1,24 +1,66 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Layout from './components/Layout';
+import Home from './pages/Home';
+import RegistrationGuide from './pages/RegistrationGuide';
+import FAQ from './pages/FAQ';
+import WhatsAppGroup from './pages/WhatsAppGroup';
+import TelegramChannel from './pages/TelegramChannel';
+import BettingTips from './pages/BettingTips';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <Layout>
+              <Home />
+            </Layout>
+          }
+        />
+        <Route
+          path="/registration-guide"
+          element={
+            <Layout>
+              <RegistrationGuide />
+            </Layout>
+          }
+        />
+        <Route
+          path="/faq"
+          element={
+            <Layout>
+              <FAQ />
+            </Layout>
+          }
+        />
+        <Route
+          path="/whatsapp-group"
+          element={
+            <Layout>
+              <WhatsAppGroup />
+            </Layout>
+          }
+        />
+        <Route
+          path="/telegram-channel"
+          element={
+            <Layout>
+              <TelegramChannel />
+            </Layout>
+          }
+        />
+        <Route
+          path="/tips"
+          element={
+            <Layout>
+              <BettingTips />
+            </Layout>
+          }
+        />
+      </Routes>
+    </Router>
   );
 }
 
