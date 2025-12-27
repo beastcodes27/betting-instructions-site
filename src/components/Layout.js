@@ -42,7 +42,7 @@ const Layout = ({ children }) => {
               </div>
             </div>
             <p className="text-gray-400 text-sm">
-              Bet responsibly. This platform provides betting tips only and does not guarantee winnings.
+              Bet responsibly. This platform is Developed by DevConnect TZ.
             </p>
           </div>
         </div>
